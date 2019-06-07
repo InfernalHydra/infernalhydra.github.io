@@ -11624,7 +11624,7 @@ label.panel-block:hover {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   #aboutme-paragraph {
     width: 100%;
   }
@@ -11636,7 +11636,7 @@ label.panel-block:hover {
   margin: auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   #aboutme-left-card {
     width: 100%;
   }

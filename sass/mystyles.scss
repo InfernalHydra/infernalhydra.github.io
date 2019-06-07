@@ -22,7 +22,7 @@
         text-indent: 40px;
         width: 60%;
         font-size: large;
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 480px) {
             width: 100%;
         }
         margin-top: 10px;
@@ -32,7 +32,7 @@
         &-card
         {
             width: 50%;
-            @media screen and (max-width: 400px) {
+            @media screen and (max-width: 480px) {
                 width: 100%;
             }
             height: auto;
