@@ -11611,10 +11611,26 @@ label.panel-block:hover {
   text-align: center;
 }
 
+#aboutme-left-card {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+  #aboutme-left-card {
+    width: 100%;
+  }
+}
+
 #aboutme-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -11623,22 +11639,23 @@ label.panel-block:hover {
           align-items: center;
 }
 
-#aboutme-right-buttons-wrapper {
-  width: 90%;
-  height: 80%;
-}
-
-#buttons {
-  width: 100%;
-  height: 100%;
-  background: #209cee;
+#aboutme-right-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #portfolio {
   background: #ffdd57;
-}
-
-#footer {
-  background: #ff3860;
 }
 /*# sourceMappingURL=mystyles.css.map */
