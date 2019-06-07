@@ -6,12 +6,26 @@
     &-container {
         text-align: center;
     }
+    &-text {
+        color: $black;
+    }
 }
 
 #aboutme {
-    background: $grey;
+    background: $info;
     &-title{
         text-align: center;
+        color: $black;
+    }
+    &-paragraph {
+        color: $black;
+        text-indent: 40px;
+        width: 60%;
+        font-size: large;
+        @media screen and (max-width: 400px) {
+            width: 100%;
+        }
+        margin-top: 10px;
     }
     &-left
     {
@@ -43,6 +57,7 @@
         }
     }
 }
+
 #portfolio {
     background: $yellow;
 }

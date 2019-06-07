@@ -11603,12 +11603,31 @@ label.panel-block:hover {
   text-align: center;
 }
 
+#title-text {
+  color: #0a0a0a;
+}
+
 #aboutme {
-  background: #7a7a7a;
+  background: #209cee;
 }
 
 #aboutme-title {
   text-align: center;
+  color: #0a0a0a;
+}
+
+#aboutme-paragraph {
+  color: #0a0a0a;
+  text-indent: 40px;
+  width: 60%;
+  font-size: large;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  #aboutme-paragraph {
+    width: 100%;
+  }
 }
 
 #aboutme-left-card {
