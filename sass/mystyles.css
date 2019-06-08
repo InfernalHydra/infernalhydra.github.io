@@ -11702,6 +11702,12 @@ label.panel-block:hover {
   width: 80%;
 }
 
+@media screen and (max-width: 480px) {
+  #footer-wrapper {
+    width: 100%;
+  }
+}
+
 #footer-text {
   color: #0a0a0a;
 }

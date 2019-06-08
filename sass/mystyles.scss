@@ -81,6 +81,9 @@ $color5: rgba(48, 84, 118, 1);
     &-wrapper {
         margin: auto;
         width: 80%;
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
     }
     &-text {
         color: $black;
