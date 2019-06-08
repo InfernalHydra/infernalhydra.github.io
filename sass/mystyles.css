@@ -11596,7 +11596,7 @@ label.panel-block:hover {
 }
 
 #title {
-  background: #23d160;
+  background: #4f5270;
 }
 
 #title-container {
@@ -11608,7 +11608,7 @@ label.panel-block:hover {
 }
 
 #aboutme {
-  background: #209cee;
+  background: #305476;
 }
 
 #aboutme-title {
@@ -11675,6 +11675,34 @@ label.panel-block:hover {
 }
 
 #portfolio {
-  background: #ffdd57;
+  background: #8e6d52;
+}
+
+#portfolio-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  #portfolio-wrapper {
+    width: 100%;
+  }
+}
+
+.card {
+  margin-top: 30px;
+}
+
+#footer {
+  background: #b4837d;
+}
+
+#footer-wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+#footer-text {
+  color: #0a0a0a;
 }
 /*# sourceMappingURL=mystyles.css.map */

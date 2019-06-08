@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="sass/mystyles.css">
     <link rel='icon' href='public/favicon.ico' type='image/x-icon'/ >
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/loadPortfolio.js"></script>
   </head>
   <body>
   <section class="section" id="title">
@@ -15,7 +17,7 @@
         Ryan Chhong
       </h1>
       <h5 class="title" id="title-text">
-          Computer Science Enthusiast
+          Website and Mobile App Developer
       </h5>
     </div>
   </section>
@@ -49,10 +51,11 @@
               I currently specialize in application and website development, with a focus on back-end development (but I am working to improve my front-end skills).
           </p>
           <p id="aboutme-paragraph">
-              I currently mainly utilize either the MERN stack (MongoDB, ExpressJS, ReactJS, and NodeJS) or MeteorJS, but I am looking to expand my skillset.  In addiiton, I am knowlegable in HTML/CSS, JavaScript, Java, C++, and Python 3
+              I currently mainly utilize either the MERN stack (MongoDB, ExpressJS, ReactJS, and NodeJS) or MeteorJS, but I am looking to expand my skillset.
+              In addiiton, I am knowlegable in HTML/CSS, JavaScript, Java, C++, and Python 3.
           </p>
           <p id="aboutme-paragraph">
-              Besides Computer Science, I enjoy listening to music, obsessing over computers and computer peripherals (especially Mechanical Keyboards!), customizing devices, and indulging in Japanese Animation
+              Besides Computer Science, I enjoy listening to music, obsessing over computers and computer peripherals (especially Mechanical Keyboards!), customizing devices, and indulging in Japanese Animation.
           </p>
             <div id="aboutme-right-buttons-wrapper" style="margin-top: 10px">
                     <div class="buttons" id="aboutme-right-buttons">
@@ -89,9 +92,24 @@
       <h2 class="title" id="aboutme-title">
            Portfolio
       </h2>
-      <h3 class="title" id="aboutme-title">
-          Coming soon!
-      </h3>
+      <div id="portfolio-wrapper">
+          <div class="columns">
+              <div class="column" id="column-0">
+              
+              </div>
+              <div class="column" id="column-1">
+      
+              </div>
+              <div class="column" id="column-2">
+      
+              </div>
+            </div>
+      </div>
+  </section>
+  <section class="section" id="footer">
+      <div id="footer-wrapper">
+          <div id="footer-text">Made with Bulma, JQuery, and SASS</div>
+      </div>
   </section>
   </body>
 </html>
