@@ -9,6 +9,11 @@ const portfolioData = [
         "description" : "An application to help street performers get discovered.  Built for SXSW Hackathon 2019",
         "url" : "https://github.com/InfernalHydra/GoPerform"
     },
+    {
+        "name" : "Flappy MMO",
+        "description" : "A flappy bird clone with multiplayer support",
+        "url" : "https://github.com/InfernalHydra/FlappyMMO"
+    }
 ];
 
 $(document).ready(function() {
