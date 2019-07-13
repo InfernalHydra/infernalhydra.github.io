@@ -11604,7 +11604,7 @@ label.panel-block:hover {
 }
 
 #title-text {
-  color: #0a0a0a;
+  color: white;
 }
 
 #aboutme {
@@ -11613,11 +11613,11 @@ label.panel-block:hover {
 
 #aboutme-title {
   text-align: center;
-  color: #0a0a0a;
+  color: white;
 }
 
 #aboutme-paragraph {
-  color: #0a0a0a;
+  color: white;
   text-indent: 40px;
   width: 60%;
   font-size: large;
