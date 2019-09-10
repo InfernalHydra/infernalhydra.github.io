@@ -18,6 +18,11 @@ const portfolioData = [
         "name" : "Flappy MMO",
         "description" : "A flappy bird clone with multiplayer support",
         "url" : "https://github.com/InfernalHydra/FlappyMMO"
+    },
+    {
+        "name" : "Spotify Mini Player",
+        "description" : "A functional miniplayer for Spotify",
+        "url" : "https://github.com/InfernalHydra/SpotifyMiniPlayer" 
     }
 ];
 

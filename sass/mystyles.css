@@ -11693,6 +11693,13 @@ label.panel-block:hover {
   margin-top: 30px;
 }
 
+.card-content {
+  height: 10vh !important;
+  max-height: 10vh !important;
+  overflow: ellipse;
+  text-align: left;
+}
+
 #footer {
   background: #b4837d;
 }
