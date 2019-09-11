@@ -79,6 +79,10 @@ $color5: rgba(48, 84, 118, 1);
 .card-content {
     height: 10vh !important;
     max-height: 10vh !important;
+    @media screen and (max-width: 480px) {
+        height: 15vh !important;
+        max-height: 15vh !important;
+    }
     overflow: ellipse; 
     text-align: left;
 }

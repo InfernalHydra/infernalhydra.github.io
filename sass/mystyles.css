@@ -11700,6 +11700,13 @@ label.panel-block:hover {
   text-align: left;
 }
 
+@media screen and (max-width: 480px) {
+  .card-content {
+    height: 15vh !important;
+    max-height: 15vh !important;
+  }
+}
+
 #footer {
   background: #b4837d;
 }
