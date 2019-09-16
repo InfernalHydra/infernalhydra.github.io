@@ -5,7 +5,7 @@ const portfolioData = [
         "url" : "https://forwardtutoring.net"
     },
     {
-        "name": "Aid The Cause Donations Tracker",
+        "name": "ATC Donations Tracker",
         "description" : "A website to help keep track of donations and give live statistics on the donations for Aid the Cause, a charity event",
         "url" : "https://github.com/InfernalHydra/DonationsWebsite"
     },

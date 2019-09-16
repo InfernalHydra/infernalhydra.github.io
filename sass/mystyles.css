@@ -11691,20 +11691,24 @@ label.panel-block:hover {
 
 .card {
   margin-top: 30px;
+  height: 45%;
 }
 
 .card-content {
-  height: 10vh !important;
-  max-height: 10vh !important;
-  overflow: ellipse;
-  text-align: left;
+  height: 12vh !important;
+  max-height: 12vh !important;
 }
 
 @media screen and (max-width: 480px) {
   .card-content {
-    height: 15vh !important;
-    max-height: 15vh !important;
+    height: 17vh !important;
+    max-height: 17vh !important;
   }
+}
+
+.content {
+  height: 100%;
+  overflow: hidden;
 }
 
 #footer {
