@@ -11701,8 +11701,8 @@ label.panel-block:hover {
 
 @media screen and (max-width: 480px) {
   .card-content {
-    height: 17vh !important;
-    max-height: 17vh !important;
+    height: 19vh !important;
+    max-height: 19vh !important;
   }
 }
 
