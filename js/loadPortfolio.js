@@ -2,7 +2,12 @@ const portfolioData = [
     {
         "name" : "Forward Tutoring",
         "description" : "A website that provides free online tutoring. Made numerous improvements to the administrative managing tools and the backend.",
-        "url" : "https://forwardtutoring.net"
+        "url" : "https://github.com/garrettgu10/forward-tutoring"
+    },
+    {
+      "name" : "SnapPack", 
+      "description" : "A mobile application to help travelers pack.  Won best use of Google Cloud Services at HackTX 2019",
+      "url" : "https://github.com/InfernalHydra/SnapPack"
     },
     {
         "name": "ATC Donations Tracker",
@@ -15,14 +20,14 @@ const portfolioData = [
         "url" : "https://github.com/InfernalHydra/GoPerform"
     },
     {
-        "name" : "Flappy MMO",
-        "description" : "A flappy bird clone with multiplayer support",
-        "url" : "https://github.com/InfernalHydra/FlappyMMO"
-    },
-    {
         "name" : "Spotify Mini Player",
         "description" : "A functional miniplayer for Spotify",
         "url" : "https://github.com/InfernalHydra/SpotifyMiniPlayer" 
+    },
+    {
+      "name" : "Want to see more?",
+      "description" : "Check out my Github below!",
+      "url" : "https://github.com/InfernalHydra/"
     }
 ];
 

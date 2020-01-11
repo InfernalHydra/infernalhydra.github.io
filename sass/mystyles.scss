@@ -1,15 +1,20 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
 
-$color1: rgba(210, 140, 121, 1);
-$color2: rgba(180, 131, 125, 1);
-$color3: rgba(142, 109, 82, 1);
-$color4: rgba(79, 82, 112, 1);
-$color5: rgba(48, 84, 118, 1);
+$color1: rgba(48, 55, 48, 1);
+$color2: rgba(24, 24, 24, 1);
+$color3: rgba(78, 84, 80, 1);
+$color4: rgba(76, 105, 49, 1);
+$color5: rgba(143, 117, 79, 1);
 
 #title {
-    background: $color4;
+    background: url("../public/bg.jpg");
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     &-container {
+
         text-align: center;
     }
     &-text {
@@ -25,9 +30,9 @@ $color5: rgba(48, 84, 118, 1);
     }
     &-paragraph {
         color: $white;
-        text-indent: 40px;
         width: 60%;
         font-size: large;
+        text-align: center;
         @media screen and (max-width: 480px) {
             width: 100%;
         }
@@ -35,15 +40,10 @@ $color5: rgba(48, 84, 118, 1);
     }
     &-left
     {
-        &-card
-        {
-            width: 50%;
-            @media screen and (max-width: 480px) {
-                width: 100%;
-            }
-            height: auto;
-            margin: auto;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &-right
     {
@@ -100,6 +100,7 @@ $color5: rgba(48, 84, 118, 1);
         }
     }
     &-text {
-        color: $black;
+        color: $white;
     }
+
 }
