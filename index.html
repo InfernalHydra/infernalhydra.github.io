@@ -8,7 +8,9 @@
     <link rel='icon' href='public/favicon.ico' type='image/x-icon'/ >
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/anime.min.js"></script>
     <script src="js/loadPortfolio.js"></script>
+    <script src="js/handleScroll.js"></script>
   </head>
   <body>
   <section class="section" id="title">
@@ -53,8 +55,9 @@
     <h2 class="title" id="aboutme-title">
       About me!
     </h2>
-    <div class="columns" >
-        <div class="column" id="aboutme-right">
+    <div id="aboutme-content">
+      <div class="columns">
+        <div class="column" id="aboutme-section">
           <div id="aboutme-paragraph">
               Hey I'm Ryan!  I am currently a Computer Science Major at the University of Texas at Austin.  
           </div>
@@ -63,18 +66,21 @@
               I am a full-stack developer, but I am working to improve my front-end skills while maintaining my back-end skills.
           </div>
           <div id="aboutme-paragraph">
+              My hobbies include playing video games, Mechanical Keyboards, Music, and <a href="https://github.com/InfernalHydra/dotfiles">Ricing</a>.
+        </div>
+          <div id="aboutme-paragraph">
             I have experience working with JavaScript and a variety of frameworks, including React, Express, Node and MeteorJS.
             Check out the projects listed below!
         </div>
-        </div>
+      </div>
+     </div>
     </div>
-
   </section>
   <section class="section" id="portfolio">
-      <h2 class="title" id="aboutme-title">
+      <h2 class="title" id="portfolio-title">
            Portfolio
       </h2>
-      <div id="portfolio-wrapper">
+      <div id="portfolio-content">
           <div class="columns">
               <div class="column" id="column-0">
                 
@@ -90,7 +96,7 @@
   </section>
   <section class="section" id="footer">
       <div id="footer-wrapper">
-          <div id="footer-text">Made with Bulma, JQuery, and SASS</div>
+          <div id="footer-title">Made with Bulma, JQuery, SASS, and AnimeJS</div>
       </div>
   </section>
   </body>

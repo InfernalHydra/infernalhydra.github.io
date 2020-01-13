@@ -11643,7 +11643,7 @@ label.panel-block:hover {
   }
 }
 
-#buttons-wrapper {
+z #buttons-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11686,8 +11686,13 @@ label.panel-block:hover {
 }
 
 #aboutme-title {
+  opacity: 0;
   text-align: center;
   color: white;
+}
+
+#aboutme-content {
+  opacity: 0;
 }
 
 #aboutme-paragraph {
@@ -11704,7 +11709,7 @@ label.panel-block:hover {
   }
 }
 
-#aboutme-left {
+#aboutme-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11712,38 +11717,6 @@ label.panel-block:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#aboutme-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#aboutme-right-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -11754,6 +11727,16 @@ label.panel-block:hover {
 
 #portfolio {
   background: #4e5450;
+}
+
+#portfolio-title {
+  opacity: 0;
+  text-align: center;
+  color: white;
+}
+
+#portfolio-content {
+  opacity: 0;
 }
 
 #portfolio-wrapper {
@@ -11795,7 +11778,7 @@ label.panel-block:hover {
 
 #footer-wrapper {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -11804,7 +11787,7 @@ label.panel-block:hover {
   }
 }
 
-#footer-text {
+#footer-title {
   color: white;
 }
 /*# sourceMappingURL=mystyles.css.map */
