@@ -107,14 +107,14 @@ $primary: $color2;
 
 }
 
-.card-content {
-    height: 12vh !important;
-    max-height: 12vh !important;
-    @media screen and (max-width: 480px) {
-        height: 19vh !important;
-        max-height: 19vh !important;
-    }
+.card-footer-item {
+    height: 15%;
 }
+
+.card-content {
+    height: 55%;
+}
+
 .content {
     height: 100%;
     overflow: hidden;

@@ -11755,16 +11755,12 @@ z #buttons-wrapper {
   height: 45%;
 }
 
-.card-content {
-  height: 12vh !important;
-  max-height: 12vh !important;
+.card-footer-item {
+  height: 15%;
 }
 
-@media screen and (max-width: 480px) {
-  .card-content {
-    height: 19vh !important;
-    max-height: 19vh !important;
-  }
+.card-content {
+  height: 55%;
 }
 
 .content {
