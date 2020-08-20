@@ -11752,6 +11752,9 @@ z #buttons-wrapper {
 
 .card {
   margin-top: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 6px 8px #888888;
+          box-shadow: 3px 6px 8px #888888;
 }
 
 .card-content {
