@@ -103,22 +103,18 @@ $primary: $color2;
 
 .card {
     margin-top: 30px;
-    height: 45%;
-
 }
 
-.card-footer-item {
-    height: 15%;
-}
 
 .card-content {
-    height: 55%;
+    font-size: medium;
 }
 
 .content {
     height: 100%;
     overflow: hidden;
 }
+
 #footer {
     background: $color2;
     &-wrapper {

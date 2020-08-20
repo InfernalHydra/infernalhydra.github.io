@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan's Website</title>
-    <link rel="stylesheet" href="sass/mystyles.css">
+    <link rel="stylesheet" href="css/mystyles.css">
     <link rel='icon' href='public/favicon.ico' type='image/x-icon'/ >
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
@@ -78,13 +78,23 @@
       <h2 class="title" id="portfolio-title">
            Portfolio
       </h2>
+
       <div id="portfolio-content">
           <div class="columns">
               <div class="column" id="column-0">
+                {{#each cards.[0]}}
+                  {{>card card=.}}
+                {{/each}}
               </div>
               <div class="column" id="column-1">
+                {{#each cards.[1]}}
+                  {{>card card=.}}
+                {{/each}}
               </div>
               <div class="column" id="column-2">
+                {{#each cards.[2]}}
+                  {{>card card=.}}
+                {{/each}}
               </div>
             </div>
       </div>
