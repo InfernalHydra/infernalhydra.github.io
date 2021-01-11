@@ -20,16 +20,13 @@ gulp.task('default', function() {
                 "description" : "A custom survey maker to help keep track of visitors, complete with health alerts and rudimentary contact tracing",
                 "url" : "https://github.com/InfernalHydra/SnapPack"
             },
-            {
-                "name" : "Want to see more?",
-                "description" : "Check out my Github below!",
-                "url" : "https://github.com/InfernalHydra/"
-            }
-        ];
+    ];
+
     let cards = [[], [], []];
     for(let i = 0; i < rawData.length; i++) {
         cards[i % cards.length].push(rawData[i]);
     }
+
     console.log(cards);
 
     let templateData = {

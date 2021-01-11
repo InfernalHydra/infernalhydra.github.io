@@ -11750,6 +11750,13 @@ z #buttons-wrapper {
   }
 }
 
+#portfolio-footer {
+  font-size: large;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
 .card {
   margin-top: 30px;
   border-radius: 10px;
