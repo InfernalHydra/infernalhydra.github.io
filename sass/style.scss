@@ -5,10 +5,13 @@ $color2: rgba(24, 24, 24, 1);
 $color3: rgba(78, 84, 80, 1);
 $color4: rgba(76, 105, 49, 1);
 $color5: rgba(143, 117, 79, 1);
-$white: rgba(255, 255, 255, 1);
 
 $primary: $color2;
-@import "../node_modules/bulma/bulma.sass";
+@import "./reset.scss";
+
+body {
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
 #title {
     background: url("../public/bg.jpg");
@@ -19,13 +22,19 @@ $primary: $color2;
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     &-container {
+        width: 100%;
         opacity: 0;
         text-align: center;
         animation: fadein 3.0s forwards;
     }
     &-text {
-        color: $white;
+        font-size: 3rem;
+        color:  white;
+        text-rendering: optimizeLegibility;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
     }
 }
 
@@ -36,7 +45,7 @@ $primary: $color2;
     align-items: center;
     @media screen and (max-width: 480px) {
         flex-direction: column;
-    }z
+    }
     &-wrapper {
         display: flex;
         flex-direction: row;
@@ -48,6 +57,17 @@ $primary: $color2;
     @media screen and (max-width: 480px) {
         margin-top: 10px;
     }
+    padding: calc(0.5em - 1px) 1em;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
 }
 
 @keyframes fadein {
@@ -60,13 +80,13 @@ $primary: $color2;
     &-title{
         opacity: 0;
         text-align: center;
-        color: $white;
+        color: white;
     }
     &-content {
         opacity: 0;
     }
     &-paragraph {
-        color: $white;
+        color: white;
         width: 60%;
         font-size: large;
         text-align: center;
@@ -89,7 +109,7 @@ $primary: $color2;
     &-title{
         opacity: 0;
         text-align: center;
-        color: $white;
+        color: white;
     }
     &-content {
         opacity: 0;
@@ -135,7 +155,7 @@ $primary: $color2;
         }
     }
     &-title {
-        color: $white;
+        color: white;
     }
 
 }
