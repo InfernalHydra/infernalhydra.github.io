@@ -2,7 +2,18 @@ var gulp = require('gulp');
 var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 
-gulp.task('default', function() {
+var dependencies = [
+    "node_modules/@fortawesome/fontawesome-free/js/all.js",
+    "node_modules/animejs/lib/anime.min.js"
+];
+
+var files = [
+    "css/*.*",
+    "js/*.*",
+    "public/*.*"
+]
+
+function compileHandlebars() {
     let rawData =
         [
             {
@@ -27,7 +38,7 @@ gulp.task('default', function() {
         cards[i % cards.length].push(rawData[i]);
     }
 
-    console.log(cards);
+    // console.log(cards);
 
     let templateData = {
         cards
@@ -60,5 +71,16 @@ gulp.task('default', function() {
     return gulp.src('index.handlebars')
                .pipe(handlebars(templateData, options))
                .pipe(rename('index.html'))
-               .pipe(gulp.dest('./'));
-});
+               .pipe(gulp.dest('docs'));
+}
+
+function copyDependencies() {
+    return gulp.src(dependencies)
+               .pipe(gulp.dest('docs/js/'))
+}
+function copyOtherFiles() {
+    return gulp.src(files, {base: './'})
+               .pipe(gulp.dest('docs'))
+}
+
+exports.default = gulp.parallel(compileHandlebars, copyDependencies, copyOtherFiles)
