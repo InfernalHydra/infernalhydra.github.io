@@ -11,7 +11,7 @@ $primary: $color2;
 @import "../node_modules/bulma/bulma.sass";
 
 #title {
-    background: url("/public/bg.jpg");
+    background: url("../public/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

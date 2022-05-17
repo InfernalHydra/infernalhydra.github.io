@@ -7877,7 +7877,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem; }
 
 #title {
-  background: url("/public/bg.jpg");
+  background: url("../public/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
