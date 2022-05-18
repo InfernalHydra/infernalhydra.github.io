@@ -64,11 +64,22 @@ body {
     text-align: center;
     animation: fadein 3.0s forwards; }
   #title-text {
-    font-size: 3rem;
-    color: white;
-    text-rendering: optimizeLegibility;
-    margin-bottom: 1.5rem;
-    font-weight: 600; }
+    font-size: 5rem;
+    font-weight: 600;
+    padding-top: 0; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.title {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  color: white;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1.5rem; }
 
 #buttons {
   display: flex;
@@ -83,7 +94,7 @@ body {
     flex-direction: row; }
 
 .button {
-  margin-left: 10px;
+  margin-left: .5em;
   padding: calc(0.5em - 1px) 1em;
   border: 1px solid white;
   border-radius: 4px;
@@ -92,17 +103,62 @@ body {
   line-height: 1.5; }
   @media screen and (max-width: 480px) {
     .button {
-      margin-top: 10px; } }
+      margin-top: .5em; } }
+  .button:hover {
+    color: black;
+    background-color: white; }
 
-.button:hover {
-  color: black;
-  background-color: white; }
+.section {
+  height: 100%; }
 
-@keyframes fadein {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#portfolio {
+  background: #4e5450; }
+  #portfolio-title {
+    opacity: 0;
+    text-align: center;
+    color: white; }
+  #portfolio-content {
+    width: 80%;
+    transform: translateX(10%);
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr; }
+    @media screen and (max-width: 480px) {
+      #portfolio-content {
+        grid-template-columns: repeat(1, 1fr); } }
+  #portfolio-footer {
+    font-size: 1.4rem;
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    padding-bottom: 1em; }
+
+.card {
+  border-radius: 10px;
+  box-shadow: 3px 6px 8px #888888;
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .card-title {
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: .75rem 1rem;
+    box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
+    background-color: transparent; }
+  .card-content {
+    padding: 1.5rem;
+    line-height: 1.25;
+    font-size: 1.25em;
+    flex-grow: 1; }
+  .card-link {
+    text-decoration: none; }
+  .card-link-text {
+    padding: .75rem;
+    text-align: center;
+    color: black;
+    border-top: 1px solid #ededed; }
 
 #aboutme {
   background: #8f754f; }
@@ -115,7 +171,7 @@ body {
   #aboutme-paragraph {
     color: white;
     width: 60%;
-    font-size: large;
+    font-size: 1.4rem;
     text-align: center;
     margin-top: 10px; }
     @media screen and (max-width: 480px) {
@@ -125,47 +181,5 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-
-#portfolio {
-  background: #4e5450; }
-  #portfolio-title {
-    opacity: 0;
-    text-align: center;
-    color: white; }
-  #portfolio-content {
-    opacity: 0; }
-  #portfolio-wrapper {
-    width: 80%;
-    margin: auto; }
-    @media screen and (max-width: 480px) {
-      #portfolio-wrapper {
-        width: 100%; } }
-  #portfolio-footer {
-    font-size: large;
-    margin-top: 20px;
-    color: white;
-    text-align: center; }
-
-.card {
-  margin-top: 30px;
-  border-radius: 10px;
-  box-shadow: 3px 6px 8px #888888; }
-
-.card-content {
-  font-size: medium; }
-
-.content {
-  height: 100%;
-  overflow: hidden; }
-
-#footer {
-  background: #181818; }
-  #footer-wrapper {
-    margin: auto;
-    width: 100%; }
-    @media screen and (max-width: 480px) {
-      #footer-wrapper {
-        width: 100%; } }
-  #footer-title {
-    color: white; }
+    align-items: center;
+    padding-bottom: 3%; }
