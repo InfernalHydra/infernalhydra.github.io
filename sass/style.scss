@@ -97,6 +97,7 @@ body {
         color: white;
     }
     &-content{
+        opacity: 0;
         width: 80%;
         display: grid;
         gap: 1.5em;
@@ -111,6 +112,7 @@ body {
         }
     }
     &-footer {
+        opacity: 0;
         font-size: 1.25rem;
         margin-top: 1em;
         color: white;

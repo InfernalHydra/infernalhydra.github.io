@@ -5,7 +5,7 @@ let generator = sectionGenerator();
 let curr = generator.next().value;
 
 function* sectionGenerator() {
-    let sections = ["title", "portfolio-title", "portfolio-content", "aboutme-title", "aboutme-content"];
+    let sections = ["title", "portfolio-title", "portfolio-content", "portfolio-footer", "aboutme-title", "aboutme-content"];
     for(let i = 0; i < sections.length; i++) {
         yield sections[i];
     }
