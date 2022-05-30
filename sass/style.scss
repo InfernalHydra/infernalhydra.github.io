@@ -102,6 +102,10 @@ body {
         gap: 1.5em;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 1fr;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
         @media screen and (max-width: 480px) {
             grid-template-columns: repeat(1, 1fr)
         }
